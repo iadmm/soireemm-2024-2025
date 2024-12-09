@@ -4,7 +4,7 @@ const quotes = [
     author: "Jérôme Coupé",
   },
   {
-    text: "Merde. Je vais encore devoir ramener Jérôme à BX.",
+    text: "Je vais encore devoir ramener Jérôme à BX ...",
     author: "Nicolas Gillard",
   },
   {
@@ -12,11 +12,11 @@ const quotes = [
     author: "Julien Moreau",
   },
   {
-    text: "Le rendu photoréaliste, c'est simple: c'est l'ennemi.",
+    text: "Le rendu photoréaliste: c'est simple, c'est l'ennemi.",
     author: "Fabrice Laroche",
   },
   {
-    text: "C'est assez réussi pour un model sheet de Barbapapa.",
+    text: "C'est assez réussi comme model sheet de Barbapapa.",
     author: "Olivier Senny",
   },
   {
@@ -24,11 +24,11 @@ const quotes = [
     author: "Cédric Deru",
   },
   {
-    text: "En unity comme en web, une variable reste une variable.",
+    text: "Si ça peut vous consoler, ailleurs aussi c'est le bordel.",
     author: "Thomas Henrion",
   },
   {
-    text: "Venir de Namur en train c'est merdique cette année.",
+    text: "Venir de Namur en train, c'est quotidiennement merdique.",
     author: "Christophe Pesesse",
   },
   {
@@ -60,8 +60,8 @@ const quotes = [
     author: "Rémi Vandenitte",
   },
   {
-    text: "Ici, je fais du Houdini. Au boulôt, je fais du compo.",
-    author: "Rémi Vandenitte",
+    text: "Non, Houdini ne va pas forcément disparaître.",
+    author: "Thomas Scourneau",
   },
 ];
 
@@ -73,11 +73,10 @@ class RandomQuotes extends HTMLElement {
   connectedCallback() {
     this.elText = this.querySelector("[data-text]");
     this.elQuote = this.querySelector("[data-author]");
-    this.elButton = this.querySelector("button");
 
-    this.elButton.style = "display: inline-block;";
-
-    this.elButton.addEventListener("click", (addEventListener) => {
+    const elButton = this.querySelector("button");
+    elButton.style = "display: inline-block;";
+    elButton.addEventListener("click", (event) => {
       this.changeQuote();
     });
 

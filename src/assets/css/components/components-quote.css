@@ -7,30 +7,28 @@
 }
 
 .c-quote__button {
-  --button-size: 36px;
+  display: inline-block;
+  background-color: var(--color-grey-200);
+  padding: 6px 18px;
 
-  display: none;
-
-  background-color: red;
   border: none;
-  padding: 0;
   cursor: pointer;
-  text-indent: -999px;
-  overflow: hidden;
-  margin-block-end: 12px;
-  opacity: 0.42;
+  margin-block-end: 2.4em;
 
-  block-size: var(--button-size);
-  inline-size: var(--button-size);
+  font-weight: 500;
+  font-size: calc(12 / 16 * 1rem);
+  line-height: 1;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 3%;
+  border-radius: 1rem;
 
-  background: url(../img/icon_reload.svg) 50% 50% no-repeat;
-  background-size: cover;
-
-  transition: opacity 0.2s ease-out;
+  /* overridden by JS */
+  display: none;
 
   &:hover,
   &:focus {
-    opacity: 1;
+    color: var(--color-accent-bright);
   }
 }
 
@@ -40,7 +38,7 @@
   line-height: 1.32;
   font-family: "Georgia", "Times New Roman", serif;
   text-wrap: balance;
-  margin-block-end: 0.36em;
+  margin-block-end: 0.3em;
   text-transform: uppercase;
   quotes: "“" "”" "‘" "‘";
 
