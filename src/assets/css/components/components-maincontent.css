@@ -1,0 +1,9 @@
+/* ==========================================
+=main content
+========================================== */
+
+.c-maincontent {
+  --maincontent-padding: clamp(30px, 0.804rem + 5.357vi, 90px);
+
+  padding-block: var(--maincontent-padding);
+}

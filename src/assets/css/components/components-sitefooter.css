@@ -1,0 +1,15 @@
+/* ==========================================
+=sitefooter
+========================================== */
+
+.c-sitefooter {
+  text-align: center;
+  font-size: var(--fontsize-xs);
+}
+
+.c-sitefooter__copyright {
+  margin: 0;
+  border-block-start: 1px solid rgba(255, 255, 255, 0.12);
+  padding-block: 12px;
+  color: var(--color-text-secondary);
+}

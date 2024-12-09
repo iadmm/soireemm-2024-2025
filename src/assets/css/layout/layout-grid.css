@@ -1,0 +1,82 @@
+/* ==========================================
+=grid
+========================================== */
+
+.l-grid {
+  --columns: 1;
+  --columns-sm: var(--columns);
+  --columns-md: var(--columns-sm);
+  --columns-lg: var(--columns-md);
+  --columns-xl: var(--columns-lg);
+
+  --gap: 0;
+  --gap-sm: var(--gap);
+  --gap-md: var(--gap-sm);
+  --gap-lg: var(--gap-md);
+  --gap-xl: var(--gap-lg);
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  gap: var(--gap);
+
+  @media (width >= 500px) {
+    grid-template-columns: repeat(var(--columns-sm), minmax(0, 1fr));
+    gap: var(--gap-sm);
+  }
+
+  @media (width >= 750px) {
+    grid-template-columns: repeat(var(--columns-md), minmax(0, 1fr));
+    gap: var(--gap-md);
+  }
+
+  @media (width >= 1024px) {
+    grid-template-columns: repeat(var(--columns-lg), minmax(0, 1fr));
+    gap: var(--gap-lg);
+  }
+
+  @media (width >= 1440px) {
+    grid-template-columns: repeat(var(--columns-xl), minmax(0, 1fr));
+    gap: var(--gap-xl);
+  }
+}
+
+.l-grid > * {
+  --col: auto;
+  --col-sm: var(--col);
+  --col-md: var(--col-sm);
+  --col-lg: var(--col-md);
+  --col-xl: var(--col-lg);
+
+  --row: auto;
+  --row-sm: var(--row);
+  --row-md: var(--row-sm);
+  --row-lg: var(--row-md);
+  --row-xl: var(--row-lg);
+
+  grid-column: var(--col);
+  grid-row: var(--row);
+
+  @media (width >= 500px) {
+    grid-column: var(--col-sm);
+    grid-row: var(--row-sm);
+  }
+
+  @media (width >= 750px) {
+    grid-column: var(--col-md);
+    grid-row: var(--row-md);
+  }
+
+  @media (width >= 1024px) {
+    grid-column: var(--col-lg);
+    grid-row: var(--row-lg);
+  }
+
+  @media (width >= 1440px) {
+    grid-column: var(--col-xl);
+    grid-row: var(--row-xl);
+  }
+}

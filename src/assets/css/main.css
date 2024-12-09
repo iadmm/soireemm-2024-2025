@@ -1,0 +1,34 @@
+@layer settings, base, layout, components, objects, utilities;
+
+/* SETTINGS */
+@import "settings/settings-colors.css" layer(settings);
+@import "settings/settings-typography.css" layer(settings);
+
+/* BASE */
+@import "base/base-fonts.css" layer(base);
+@import "base/base-reset.css" layer(base);
+@import "base/base-html.css" layer(base);
+@import "base/base-body.css" layer(base);
+@import "base/base-links.css" layer(base);
+
+/* LAYOUT */
+@import "layout/layout-container.css" layer(layout);
+@import "layout/layout-grid.css" layer(layout);
+
+/* COMPONENTS */
+@import "components/components-section.css" layer(components);
+@import "components/components-siteheader.css" layer(components);
+@import "components/components-maincontent.css" layer(components);
+@import "components/components-titles.css" layer(components);
+@import "components/components-speaker.css" layer(components);
+@import "components/components-lead.css" layer(components);
+@import "components/components-quote.css" layer(components);
+@import "components/components-partners.css" layer(components);
+@import "components/components-sitefooter.css" layer(components);
+
+/* OBJECTS */
+@import "objects/objects-fluidimg.css" layer(objects);
+
+/* UTILITIES */
+@import "utilities/utilities-margins.css" layer(utilities);
+@import "utilities/utilities-textalign.css" layer(utilities);

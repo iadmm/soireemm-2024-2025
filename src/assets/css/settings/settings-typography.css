@@ -1,0 +1,14 @@
+:root {
+  --fontstack-main: "Helvetica Neue", system-ui, sans-serif;
+  --fontstack-alt: "Bricolage", system-ui, sans-serif;
+
+  --fontsize-lg: clamp(18/16 * 1rem, 0.5rem + 1vw, 21/16 * 1rem);
+  --fontsize-base: clamp(1rem, 0.964rem + 0.179vi, 18/16 * 1rem);
+  --fontsize-sm: clamp(14/16 * 1rem, 0.5rem + 1vw, 16/16 * 1rem);
+  --fontsize-xs: clamp(12/16 * 1rem, 0.5rem + 1vw, 14/16 * 1rem);
+
+  --fontsize-h1: clamp(28/16 * 1rem, 1.679rem + 0.357vi, 32/16 * 1rem);
+  --fontsize-h2: clamp(24/16 * 1rem, 1.429rem + 0.357vi, 28/16 * 1rem);
+  --fontsize-h3: clamp(21/16 * 1rem, 1.259rem + 0.268vi, 24/16 * 1rem);
+  --fontsize-h4: clamp(18/16 * 1rem, 1.071rem + 0.268vi, 21/16 * 1rem);
+}

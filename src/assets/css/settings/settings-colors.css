@@ -1,0 +1,19 @@
+:root {
+  --color-grey-100: hsl(30, 6%, 3%);
+  --color-grey-200: hsl(30, 6%, 25%);
+  --color-grey-300: hsl(30, 6%, 40%);
+  --color-grey-400: hsl(30, 6%, 55%);
+  --color-grey-500: hsl(30, 6%, 65%);
+  --color-grey-600: hsl(30, 6%, 80%);
+  --color-grey-700: hsl(30, 6%, 90%);
+  --color-grey-800: hsl(30, 6%, 98%);
+
+  --color-white: #ffffff;
+
+  --color-background-primary: var(--color-grey-100);
+
+  --color-accent-primary: #f9965d;
+
+  --color-text-primary: var(--color-grey-800);
+  --color-text-secondary: var(--color-grey-500);
+}

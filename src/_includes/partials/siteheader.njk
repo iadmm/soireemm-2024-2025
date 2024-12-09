@@ -1,0 +1,27 @@
+<header class="c-siteheader">
+    <div class="c-siteheader__banner">
+      <img
+        src="/assets/img/banner_1500.jpg"
+        srcset="/assets/img/banner_800.jpg 800w,
+                /assets/img/banner_1024.jpg 1024w,
+                /assets/img/banner_1200.jpg 1200w,
+                /assets/img/banner_1500.jpg 1500w"
+        sizes="(min-width: 750px) 50vw,
+               66vw"
+        alt="People sitting in a bar with beers in their hands"
+        width="1500"
+        height="2000"
+        decoding="async">
+    </div>
+    <div class="c-siteheader__content">
+      <p class="c-siteheader__date">
+        <time datetime="{{ site.eventDate | dateISO }}">
+          {{ site.eventDate | dateDisplay }}
+        </time>
+      </p>
+      <h1 class="c-siteheader__title">
+        <span>Beers &amp;</span> 
+        <span>Careers</span>
+      </h1>
+    </div>
+</header>

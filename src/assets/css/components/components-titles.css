@@ -1,0 +1,27 @@
+/* ==========================================
+=titles
+========================================== */
+
+:is(.c-h1, .c-h2, .c-h3, .c-h4) {
+  font-weight: 450;
+  line-height: 1.2;
+  font-family: var(--fontstack-alt);
+  color: var(--color-accent-primary);
+  margin-block-end: 0.75em;
+}
+
+.c-h1 {
+  font-size: var(--fontsize-h1);
+}
+
+.c-h2 {
+  font-size: var(--fontsize-h2);
+}
+
+.c-h3 {
+  font-size: var(--fontsize-h3);
+}
+
+.c-h4 {
+  font-size: var(--fontsize-h4);
+}

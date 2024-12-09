@@ -1,0 +1,135 @@
+---
+permalink: index.html
+---
+
+{% extends "layouts/base.njk" %}
+
+{% from "macros/speaker.njk" import speaker %}
+
+{% block content %}
+
+  <div class="c-section">
+    <div class="l-container">
+
+      <div 
+        class="l-grid"
+        style="--columns-md: 12;
+               --gap-md: 18px;">
+        <div style="--col-md: span 4; --col-lg: span 6">
+          <h2 class="c-h2">Le concept</h2>
+        </div>
+        <div style="--col-md: span 8; --col-lg: span 6">
+          <p class="c-lead">
+            Quatre anciennes et anciens partagent avec vous leurs parcours, leurs joies, leurs doutes et leurs victoires sur l'adversité. Pour nous remettre de ces émotions, nous poursuivrons ensuite les discussions autour d'un verre (ou deux) dans le foyer.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+
+      <h2 class="c-h2">Nos invités</h2>
+      {% for item in collections.speakers %}
+        {% if loop.first %}<ul class="l-grid" style="--columns-sm: 2; --columns-lg: 4; --gap: 18px">{% endif %}
+          <li>
+
+            {{ speaker({
+              name: item.data.name,
+              surname: item.data.surname,
+              role: item.data.role,
+              image: item.data.image,
+              linkedin: item.data.linkedin
+            }) }}
+
+          </li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container  l-container--medium">
+
+      <random-quotes>
+        <figure class="c-quote">
+          <blockquote>
+            <p class="c-quote__text js-text" data-text>Des bières, des bières ... et mon petit vin blanc, on y pense ?</p>
+          </blockquote>
+          <figcaption>
+            <p class="c-quote__author" data-author>Fabrice Laroche</p>
+          </figcaption>
+        </figure> 
+      </random-quotes>
+
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+
+      <div 
+        class="l-grid"
+        style="--columns-md: 2;
+               --gap-md: 18px">
+        <div>
+          <h2 class="c-h2">Infos pratiques</h2>
+        </div>
+        <div 
+          class="l-grid"
+          style="--columns-lg: 2;
+                 --gap-lg: 18px">
+
+          <div>
+            <p>
+              30 novembre 2023<br />
+              19h00 - 23h00<br />
+              Entrée gratuite<br />
+            </p>
+          </div>
+          <div>
+            <address>
+              <p>
+                Institut des Arts de Diffusion<br />
+                Route de Blocry, 5<br />
+                1340 Louvain-la-Neuve<br />
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container l-container--medium">
+
+      {% for item in partners %}
+        {% if loop.first %}<ul class="c-partners">{% endif %}
+
+          <li>
+            <article class="c-partner">
+              <a href="{{ item.url }}">
+                {% set logoSrc = "/assets/img/partners/" ~ item.logo %}
+                <img 
+                  src="{{ logoSrc }}" 
+                  alt="{{ item.name }}"
+                  class="o-fluidimg"
+                  loading="lazy"
+                  decoding="async">
+              </a>
+            </article>
+          </li>
+
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+      
+
+    </div>
+  </div>
+  
+{% endblock %}

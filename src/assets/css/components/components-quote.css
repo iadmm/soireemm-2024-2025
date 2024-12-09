@@ -1,0 +1,30 @@
+/* ==========================================
+=quote
+========================================== */
+
+.c-quote {
+  text-align: center;
+}
+
+.c-quote__text {
+  font-weight: 400;
+  font-size: clamp(28/16 * 1rem, 1.393rem + 1.786vi, 48/16 * 1rem);
+  line-height: 1.32;
+  font-family: "Georgia", "Times New Roman", serif;
+  text-wrap: balance;
+  margin-block-end: 0.36em;
+  text-transform: uppercase;
+  quotes: "“" "”" "‘" "‘";
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
+}
+
+.c-quote__author {
+  color: var(--color-text-secondary);
+}

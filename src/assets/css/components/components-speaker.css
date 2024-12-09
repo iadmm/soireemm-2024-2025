@@ -1,0 +1,46 @@
+/* ==========================================
+=speaker
+========================================== */
+
+.c-speaker {
+  display: block;
+}
+
+.c-speaker__media {
+  overflow: clip;
+  margin-block-end: 18px;
+}
+
+.c-speaker__media img {
+  transition: rotate 0.2s ease-out, scale 0.2s ease-out;
+
+  &:hover {
+    rotate: 0.6deg;
+    scale: 1.024;
+  }
+}
+
+.c-speaker__name {
+  margin-block-end: 3px;
+
+  font-weight: 400;
+  font-size: var(--fontsize-lg);
+  color: var(--color-text-primary);
+}
+
+.c-speaker__name > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--color-accent-primary);
+  }
+}
+
+.c-speaker__role {
+  margin-block-end: 0;
+  color: var(--color-text-secondary);
+}

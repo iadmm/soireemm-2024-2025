@@ -1,0 +1,25 @@
+{% macro speaker(params) %}
+
+  {% set imgSrc = "/assets/img/speakers/" ~ params.image %}
+  <article class="c-speaker">
+    <p class="c-speaker__media">
+      <a href="{{ params.linkedin }}">
+        <img 
+          src="{{ imgSrc }}" 
+          alt="{{ params.name }} {{ params.surname }}"
+          class="o-fluidimg"
+          width="600"
+          height="600"
+          loading="lazy"
+          decoding="async">
+      </a>
+    </p>
+    <h3 class="c-speaker__name">
+      <a href="{{ params.linkedin }}">
+        {{ params.name }} {{ params.surname }}
+      </a>
+    </h3>
+    <p class="c-speaker__role">{{ params.role }}</p>
+  </article>
+
+{% endmacro %}
