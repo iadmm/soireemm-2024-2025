@@ -3,22 +3,30 @@
 ========================================== */
 
 .c-siteheader {
+  --siteheader-padding: 18px;
+  --sideheader-max-size: 1680px;
+
   display: grid;
 
   grid-template-columns:
-    max(18px, 3vw)
+    max(var(--siteheader-padding), 3vw)
     minmax(0, 1fr)
     minmax(0, 1fr)
     minmax(0, 1fr)
-    max(18px, 3vw);
+    max(var(--siteheader-padding), 3vw);
   grid-template-rows: 1fr auto 1fr;
-  gap: 18px;
 
   @media (width >= 750px) {
     grid-template-columns:
-      minmax(18px, calc((100vw - 1680px) / 2))
+      minmax(
+        var(--siteheader-padding),
+        calc((100vi - var(--sideheader-max-size)) / 2)
+      )
       repeat(12, minmax(0, 1fr))
-      minmax(18px, calc((100vw - 1680px) / 2));
+      minmax(
+        var(--siteheader-padding),
+        calc((100vi - var(--sideheader-max-size)) / 2)
+      );
 
     max-block-size: min(100dvh, 1024px);
   }
@@ -29,6 +37,8 @@
   grid-row: 1 / 5;
 
   @media (width >= 750px) {
+    /* adjust for 1/2 grid gutter */
+    margin-inline-start: 9px;
     grid-column: 8 / -1;
     grid-row: 1 / -1;
   }
