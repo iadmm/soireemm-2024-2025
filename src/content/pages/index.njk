@@ -13,15 +13,24 @@ permalink: index.html
 
       <div 
         class="l-grid"
-        style="--columns-md: 12;
+        style="--columns-md: 2;
                --gap-md: 18px;">
-        <div style="--col-md: span 4; --col-lg: span 6">
+        <div>
           <h2 class="c-h2">Le concept</h2>
         </div>
-        <div style="--col-md: span 8; --col-lg: span 6">
-          <p class="c-lead">
-            Quatre anciennes et anciens partagent avec vous leurs parcours, leurs joies, leurs doutes et leurs victoires sur l'adversité. Pour nous remettre de ces émotions, nous poursuivrons ensuite les discussions autour d'un verre (ou deux) dans le foyer.
-          </p>
+        <div>
+          <div class="c-lead">
+            <p>
+              Quatre anciennes et anciens partagent avec vous leurs parcours, leurs joies, leurs doutes et leurs victoires sur l'adversité. Pour nous remettre de ces émotions, nous poursuivrons ensuite les discussions autour d'un verre (ou deux) dans le foyer.
+            </p>
+            {% if site.registrations.active %}
+              <p>
+                <a class="c-ctalink" href="{{ site.registrations.url }}">
+                  Formulaire d'inscription
+                </a>
+              </p>
+            {% endif %}
+          </div>
         </div>
       </div>
 

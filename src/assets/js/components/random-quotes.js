@@ -1,14 +1,14 @@
 const quotes = [
   {
-    text: "Finis tes noisettes, Raton !",
+    text: "Finis tes noisettes, Raton!",
     author: "Jérôme Coupé",
   },
   {
-    text: "Merde. Je vais encore devoir ramener Jérôme.",
+    text: "Merde. Je vais encore devoir ramener Jérôme à BX.",
     author: "Nicolas Gillard",
   },
   {
-    text: "Le serveur de licenses d'Athéna aura ma peau.",
+    text: "Le serveur de licences d'Athéna aura ma peau.",
     author: "Julien Moreau",
   },
   {
@@ -28,7 +28,7 @@ const quotes = [
     author: "Thomas Henrion",
   },
   {
-    text: "Le trajet Namur-Bruxelles est merdique cette année.",
+    text: "Venir de Namur en train c'est merdique cette année.",
     author: "Christophe Pesesse",
   },
   {
@@ -52,8 +52,16 @@ const quotes = [
     author: "Fabian Andry",
   },
   {
-    text: "C'est le genre de soirée à effets spéciaux spontannés",
+    text: "C'est le genre de soirée à effets spéciaux spontanés.",
     author: "Damien Welch",
+  },
+  {
+    text: "Cette année, je la fais courte, mais trash.",
+    author: "Rémi Vandenitte",
+  },
+  {
+    text: "Ici, je fais du Houdini. Au boulôt, je fais du compo.",
+    author: "Rémi Vandenitte",
   },
 ];
 

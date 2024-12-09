@@ -36,7 +36,7 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    color: var(--color-accent-primary);
+    color: var(--color-accent);
   }
 }
 

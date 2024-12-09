@@ -12,7 +12,8 @@
 
   --color-background-primary: var(--color-grey-100);
 
-  --color-accent-primary: #f9965d;
+  --color-accent: hsl(20, 92%, 68%);
+  --color-accent-bright: hsl(20, 92%, 54%);
 
   --color-text-primary: var(--color-grey-800);
   --color-text-secondary: var(--color-grey-500);

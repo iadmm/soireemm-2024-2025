@@ -3,7 +3,7 @@
 ========================================== */
 
 a {
-  color: var(--color-accent-primary);
+  color: var(--color-accent);
   text-decoration: underline;
   text-underline-offset: 0.12em;
   text-decoration-thickness: 1px;

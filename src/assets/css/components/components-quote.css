@@ -18,7 +18,7 @@
   text-indent: -999px;
   overflow: hidden;
   margin-block-end: 12px;
-  opacity: 0.6;
+  opacity: 0.42;
 
   block-size: var(--button-size);
   inline-size: var(--button-size);

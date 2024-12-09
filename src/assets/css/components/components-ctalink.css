@@ -1,0 +1,23 @@
+/* ==========================================
+=CTA link
+========================================== */
+
+.c-ctalink {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+  gap: 6px;
+
+  color: inherit;
+  text-decoration: none;
+  padding-block-end: 2px;
+  border-block-end: 2px solid var(--color-accent);
+
+  transition: border-color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-accent-bright);
+  }
+}

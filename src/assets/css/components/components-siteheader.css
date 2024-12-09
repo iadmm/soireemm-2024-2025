@@ -77,7 +77,7 @@
   font-weight: 700;
   line-height: 0.9;
   font-family: var(--fontstack-alt);
-  color: var(--color-accent-primary);
+  color: var(--color-accent);
   font-size: clamp(48px, 0.643rem + 11.786vi, 180px);
   text-transform: uppercase;
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
