@@ -17,6 +17,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.watchIgnores.add("./src/assets/**/*");
 
   // passthrough copy
+  eleventyConfig.setServerPassthroughCopyBehavior("copy");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets/img/");
   eleventyConfig.addPassthroughCopy({ "./src/static": "/" });

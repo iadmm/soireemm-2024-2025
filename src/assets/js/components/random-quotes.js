@@ -65,6 +65,14 @@ class RandomQuotes extends HTMLElement {
   connectedCallback() {
     this.elText = this.querySelector("[data-text]");
     this.elQuote = this.querySelector("[data-author]");
+    this.elButton = this.querySelector("button");
+
+    this.elButton.style = "display: inline-block;";
+
+    this.elButton.addEventListener("click", (addEventListener) => {
+      this.changeQuote();
+    });
+
     this.changeQuote();
   }
 
