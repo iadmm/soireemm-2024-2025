@@ -19,6 +19,7 @@ export default async function (eleventyConfig) {
   // passthrough copy
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets/img/");
+  eleventyConfig.addPassthroughCopy({ "./src/static": "/" });
 
   // server options
   eleventyConfig.setServerOptions({
