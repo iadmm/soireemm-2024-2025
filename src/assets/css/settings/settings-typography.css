@@ -2,6 +2,8 @@
   --fontstack-main: "Helvetica Neue", system-ui, sans-serif;
   --fontstack-alt: "Bricolage", system-ui, sans-serif;
 
+  /*MODULAR SCALE https://www.modularscale.com/?16,18&px&1.333 */
+
   --fontsize-lg: clamp(18/16 * 1rem, 0.5rem + 1vw, 21/16 * 1rem);
   --fontsize-base: clamp(1rem, 0.964rem + 0.179vi, 18/16 * 1rem);
   --fontsize-sm: clamp(14/16 * 1rem, 0.5rem + 1vw, 16/16 * 1rem);

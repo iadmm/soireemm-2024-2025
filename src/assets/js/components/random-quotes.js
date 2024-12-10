@@ -4,7 +4,7 @@ const quotes = [
     author: "Jérôme Coupé",
   },
   {
-    text: "Je vais encore devoir ramener Jérôme à BX ...",
+    text: "Merde. Je vais encore devoir ramener Jérôme à BX.",
     author: "Nicolas Gillard",
   },
   {
@@ -72,10 +72,11 @@ class RandomQuotes extends HTMLElement {
 
   connectedCallback() {
     this.elText = this.querySelector("[data-text]");
-    this.elQuote = this.querySelector("[data-author]");
+    this.elAuthor = this.querySelector("[data-author]");
 
     const elButton = this.querySelector("button");
-    elButton.style = "display: inline-block;";
+    elButton.removeAttribute("hidden");
+
     elButton.addEventListener("click", (event) => {
       this.changeQuote();
     });
@@ -89,7 +90,7 @@ class RandomQuotes extends HTMLElement {
     const randomAuthor = quotes[randomNbr].author;
 
     this.elText.textContent = randomText;
-    this.elQuote.textContent = randomAuthor;
+    this.elAuthor.textContent = randomAuthor;
   }
 }
 

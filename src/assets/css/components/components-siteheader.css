@@ -9,11 +9,11 @@
   display: grid;
 
   grid-template-columns:
-    max(var(--siteheader-padding), 3vw)
+    var(--siteheader-padding)
     minmax(0, 1fr)
     minmax(0, 1fr)
     minmax(0, 1fr)
-    max(var(--siteheader-padding), 3vw);
+    var(--siteheader-padding);
   grid-template-rows: 1fr auto 1fr;
 
   @media (width >= 750px) {
@@ -22,7 +22,9 @@
         var(--siteheader-padding),
         calc((100vi - var(--sideheader-max-size)) / 2)
       )
-      repeat(12, minmax(0, 1fr))
+      repeat(6, minmax(0, 1fr))
+      18px
+      repeat(6, minmax(0, 1fr))
       minmax(
         var(--siteheader-padding),
         calc((100vi - var(--sideheader-max-size)) / 2)
@@ -37,9 +39,7 @@
   grid-row: 1 / 5;
 
   @media (width >= 750px) {
-    /* adjust for 1/2 grid gutter */
-    margin-inline-start: 9px;
-    grid-column: 8 / -1;
+    grid-column: 9 / -1;
     grid-row: 1 / -1;
   }
 }

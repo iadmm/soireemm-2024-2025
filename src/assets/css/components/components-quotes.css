@@ -2,11 +2,12 @@
 =quote
 ========================================== */
 
-.c-quote {
+.c-quotes {
+  display: block;
   text-align: center;
 }
 
-.c-quote__button {
+.c-quotes__button {
   display: inline-block;
   background-color: var(--color-grey-200);
   padding: 6px 18px;
@@ -23,18 +24,19 @@
   letter-spacing: 3%;
   border-radius: 1rem;
 
-  /* overridden by JS */
-  display: none;
-
   &:hover,
   &:focus {
     color: var(--color-accent-bright);
   }
 }
 
-.c-quote__text {
+.c-quotes__button[hidden] {
+  display: none;
+}
+
+.c-quotes__text {
   font-weight: 400;
-  font-size: clamp(28/16 * 1rem, 1.393rem + 1.786vi, 48/16 * 1rem);
+  font-size: clamp(24/16 * 1rem, -0.188rem + 5.4vi, 51/16 * 1rem);
   line-height: 1.32;
   font-family: "Georgia", "Times New Roman", serif;
   text-wrap: balance;
@@ -51,6 +53,6 @@
   }
 }
 
-.c-quote__author {
+.c-quotes__author {
   color: var(--color-text-secondary);
 }

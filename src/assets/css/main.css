@@ -3,6 +3,7 @@
 /* SETTINGS */
 @import "settings/settings-colors.css" layer(settings);
 @import "settings/settings-typography.css" layer(settings);
+@import "settings/settings-grid.css" layer(settings);
 
 /* BASE */
 @import "base/base-fonts.css" layer(base);
@@ -22,7 +23,7 @@
 @import "components/components-titles.css" layer(components);
 @import "components/components-speaker.css" layer(components);
 @import "components/components-lead.css" layer(components);
-@import "components/components-quote.css" layer(components);
+@import "components/components-quotes.css" layer(components);
 @import "components/components-partners.css" layer(components);
 @import "components/components-sitefooter.css" layer(components);
 @import "components/components-ctalink.css" layer(components);

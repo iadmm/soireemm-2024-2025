@@ -41,6 +41,5 @@
 }
 
 .c-speaker__role {
-  margin-block-end: 0;
   color: var(--color-text-secondary);
 }
