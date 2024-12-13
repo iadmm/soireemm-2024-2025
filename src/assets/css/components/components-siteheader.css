@@ -3,7 +3,7 @@
 ========================================== */
 
 .c-siteheader {
-  --siteheader-padding: 18px;
+  --siteheader-padding: 24px;
   --sideheader-max-size: 1680px;
 
   display: grid;

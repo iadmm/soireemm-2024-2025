@@ -4,7 +4,7 @@
 
 .l-container {
   --container-max-size: 1680px;
-  --container-padding: 18px;
+  --container-padding: 24px;
 
   margin: 0 auto;
   max-inline-size: var(--container-max-size);
