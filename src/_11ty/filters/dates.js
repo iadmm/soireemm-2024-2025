@@ -1,18 +1,36 @@
-import { format } from "date-fns";
+import { DateTime } from "luxon";
 
 /**
- * Display formatted date
+ * Format date
  * @param {*} date - js date or string
- * @returns Formatted date for display
+ * @returns Formatted date: display
  */
 function dateDisplay(date) {
   let jsDate = new Date(date);
-  return format(jsDate, "dd.MM.yyyy");
+  let dt = DateTime.fromJSDate(jsDate);
+  return dt.toFormat("dd.LL.yyyy");
 }
 
+/**
+ * Full date
+ * @param {*} date - js date or string
+ * @returns Formatted date: full
+ */
+function dateFull(date, locale = "en") {
+  let jsDate = new Date(date);
+  let dt = DateTime.fromJSDate(jsDate);
+  return dt.setLocale(locale).toLocaleString(DateTime.DATE_FULL);
+}
+
+/**
+ * ISO date
+ * @param {*} date - js date or string
+ * @returns Formatted date: ISO
+ */
 function dateISO(date) {
   let jsDate = new Date(date);
-  return format(jsDate, "yyyy-MM-dd");
+  let dt = DateTime.fromJSDate(jsDate);
+  return dt.toISODate();
 }
 
-export { dateDisplay, dateISO };
+export { dateDisplay, dateISO, dateFull };

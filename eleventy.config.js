@@ -1,5 +1,5 @@
 // filters
-import { dateDisplay, dateISO } from "./src/_11ty/filters/dates.js";
+import { dateDisplay, dateISO, dateFull } from "./src/_11ty/filters/dates.js";
 
 // collections
 import { speakers } from "./src/_11ty/collections/speakers.js";
@@ -8,6 +8,7 @@ export default async function (eleventyConfig) {
   // filters
   eleventyConfig.addFilter("dateDisplay", dateDisplay);
   eleventyConfig.addFilter("dateISO", dateISO);
+  eleventyConfig.addFilter("dateFull", dateFull);
 
   // collections
   eleventyConfig.addCollection("speakers", speakers);
