@@ -1,0 +1,26 @@
+/* ==========================================
+=button
+========================================== */
+
+.c-button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+
+  font-size: var(--fontsize-sm);
+  font-family: var(--fontstack-main);
+  line-height: 1;
+  color: var(--color-accent);
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: 1px solid var(--color-accent);
+
+  transition: color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-primary);
+  }
+}

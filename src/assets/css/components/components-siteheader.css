@@ -52,12 +52,8 @@
 }
 
 .c-siteheader__content {
-  grid-column: 2 / 5;
+  grid-column: 2 / -2;
   grid-row: 2 / 3;
-
-  @media (width >= 750px) {
-    grid-column: 2 / 10;
-  }
 }
 
 .c-siteheader__date {
@@ -85,12 +81,12 @@
 
 .c-siteheader__title {
   font-weight: 700;
-  line-height: 0.9;
+  line-height: 1;
   font-family: var(--fontstack-alt);
   color: var(--color-accent);
   font-size: clamp(48px, 0.643rem + 11.786vi, 180px);
   text-transform: uppercase;
-  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 36px rgba(0, 0, 0, 0.8);
   margin-block-end: 0;
 
   @media (width >= 750px) {
@@ -100,6 +96,7 @@
 
 .c-siteheader__title > span {
   display: block;
+  overflow: hidden;
 
   &:nth-child(2) {
     margin-inline-start: 0.5em;

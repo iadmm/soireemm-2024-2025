@@ -27,6 +27,7 @@
 @import "components/components-partners.css" layer(components);
 @import "components/components-sitefooter.css" layer(components);
 @import "components/components-ctalink.css" layer(components);
+@import "components/components-button.css" layer(components);
 
 /* OBJECTS */
 @import "objects/objects-fluidimg.css" layer(objects);
