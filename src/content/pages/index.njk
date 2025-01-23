@@ -41,6 +41,7 @@ permalink: index.html
     <div class="l-container">
 
       <h2 class="c-h2">Nos invités</h2>
+      
       {% for item in collections.speakers %}
         {% if loop.first %}<ul class="l-grid" style="--columns-sm: 2; --columns-lg: 4; --gap: 18px">{% endif %}
           <li>
