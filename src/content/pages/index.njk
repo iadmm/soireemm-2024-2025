@@ -43,8 +43,8 @@ permalink: index.html
       <h2 class="c-h2">Nos invités</h2>
       
       {% for item in collections.speakers %}
-        {% if loop.first %}<ul class="l-grid" style="--columns-sm: 2; --columns-lg: 4; --gap: 18px">{% endif %}
-          <li>
+        {% if loop.first %}<ul class="l-grid c-speakers" style="--columns-sm: 2; --columns-lg: 4; --gap: 18px">{% endif %}
+          <li class="c-speakers__item">
 
             {{ speaker({
               name: item.data.name,

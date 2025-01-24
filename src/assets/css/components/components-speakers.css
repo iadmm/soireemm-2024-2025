@@ -1,0 +1,11 @@
+/* ==========================================
+=speakers list
+========================================== */
+
+.c-speakers {
+  list-style: none;
+}
+
+.c-speakers__item {
+  view-timeline: --speakeritem block;
+}

@@ -5,6 +5,7 @@
 @keyframes speakerAppear {
   from {
     opacity: 0;
+    scale: 0.98s;
     translate: 0 60px;
   }
 }
@@ -12,8 +13,8 @@
 .c-speaker {
   display: block;
   animation: speakerAppear 0.3s linear both;
-  animation-timeline: view(block);
-  animation-range: entry 20% entry 100%;
+  animation-timeline: --speakeritem;
+  animation-range: entry 60px entry 100%;
 }
 
 .c-speaker__media {
