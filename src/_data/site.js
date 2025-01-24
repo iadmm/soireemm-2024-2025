@@ -5,7 +5,7 @@ export default {
   url: "https://metiers.iadmm.be",
   github: "https://github.com/iadmm/soireemm-2024-2025",
   registrations: {
-    active: true,
+    active: false,
     url: "https://forms.gle/qTDecizLnZKGvykV9",
   },
 };
